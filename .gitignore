@@ -1,0 +1,6 @@
+.DS_Store
+Carthage
+main
+*.swiftdoc
+*.swiftmodule
+*.dylib
