@@ -1,0 +1,15 @@
+[submodule "Modules/Alamofire"]
+	path = Modules/Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
+[submodule "Modules/PromiseK"]
+	path = Modules/PromiseK
+	url = https://github.com/koher/PromiseK.git
+[submodule "Modules/Argo"]
+	path = Modules/Argo
+	url = https://github.com/thoughtbot/Argo.git
+[submodule "Modules/Runes"]
+	path = Modules/Runes
+	url = https://github.com/thoughtbot/Runes.git
+[submodule "Modules/Curry"]
+	path = Modules/Curry
+	url = https://github.com/thoughtbot/Curry.git

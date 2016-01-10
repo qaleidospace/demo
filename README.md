@@ -11,10 +11,8 @@ Swift で書かれた [Qaleidospace](http://qaleido.space/) のバッチのデ�
 
 ## ビルドおよび実行方法
 
-ライブラリのインストールには [Carthage](https://github.com/Carthage/Carthage) を使います。 Homebrew 等で事前にインストールして下さい。
-
 ```bash
-carthage checkout
+git submodule update --init --recursive
 make
 ./main
 ```

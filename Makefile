@@ -1,10 +1,11 @@
+MODULES = Modules
 CHECKOUTS = Carthage/Checkouts
 
-ALAMOFIRE = $(CHECKOUTS)/Alamofire
-ARGO = $(CHECKOUTS)/Argo
-CURRY = $(CHECKOUTS)/Curry
-PROMISE_K = $(CHECKOUTS)/PromiseK
-RUNES = $(CHECKOUTS)/Runes
+ALAMOFIRE = $(MODULES)/Alamofire
+ARGO = $(MODULES)/Argo
+CURRY = $(MODULES)/Curry
+PROMISE_K = $(MODULES)/PromiseK
+RUNES = $(MODULES)/Runes
 
 ALAMOFIRE_SRC = $(ALAMOFIRE)/Source/*.swift
 ARGO_SRC = $(ARGO)/$(CHECKOUTS)/Runes/Source/Runes.swift $(ARGO)/Argo/Operators/*.swift $(ARGO)/Argo/Types/Decoded/*.swift $(ARGO)/Argo/Types/*.swift $(ARGO)/Argo/Extensions/*.swift $(ARGO)/Argo/Functions/*.swift

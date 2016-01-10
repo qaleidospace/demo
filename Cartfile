@@ -1,5 +1,0 @@
-github "Alamofire/Alamofire" ~> 3.0
-github "koher/PromiseK" "experiment"
-github "thoughtbot/Argo" "master"
-github "thoughtbot/Runes"
-github "thoughtbot/Curry"
