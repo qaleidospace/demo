@@ -16,8 +16,8 @@ extension Promise {
     }
 }
 
-func >-?<T, U>(lhs: Promise<Decoded<T>>, rhs: T -> Decoded<U>) -> Promise<Decoded<U>> {
-    return lhs.map { $0.flatMap(rhs) }
+func >-?<T, U>(lhs: Promise<Decoded<T>>, rhs: T -> U) -> Promise<Decoded<U>> {
+    return lhs.map { $0.map(rhs) }
 }
 
 func >>-?<T, U>(lhs: Promise<Decoded<T>>, rhs: T -> Promise<Decoded<U>>) -> Promise<Decoded<U>> {

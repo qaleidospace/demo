@@ -22,7 +22,7 @@ func downloadItems(page page: Int, perPage: Int) -> Promise<Decoded<[Item]>> {
 // let items: Promise<Decoded<[Item]>> = (1...3).reduce(pure(pure([]))) { items, page in
 //     items >>-? { items in
 //         downloadItems(page: page, perPage: 100) >-? { pageItems in
-//             pure(items + pageItems)
+//             items + pageItems
 //         }
 //     }
 // }
@@ -37,7 +37,7 @@ let items: Promise<Decoded<[Item]>> = (1...3).reduce(pure(pure([]))) { items, pa
         }
         
         let pageItems: Promise<Decoded<[Item]>> = downloadItems(page: page, perPage: 100) >-? { pageItems in
-            pure(items + pageItems)
+            items + pageItems
         }
 
         return wait.flatMap { _ in pageItems }
